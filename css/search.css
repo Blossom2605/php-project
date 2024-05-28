@@ -1,0 +1,217 @@
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+p {
+    color:#ffffff;
+}
+
+dt {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+#contents {
+    background-color: var(--theme-5);
+    position: relative;
+    min-height: 500px;
+}
+
+.char-title-bar {
+    border: 1px solid rgba(126, 126, 126, .2);
+    background-color: #000000;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    border-radius: .25rem;
+}
+
+.char-title-bar .char-title {
+    font-size: 20px;
+    font-weight: 700;
+    color:#ffffff;
+    margin: 0 0 0;
+}
+
+.char-info dt {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #313233;
+    color: #ffffff;
+    padding: .25em .6em;
+    border-radius: 10rem;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    margin: 0 .25rem 0 0;
+}
+
+.char-info {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-left: .5rem;
+    padding-bottom: .25rem;
+    padding-right: 0;
+    width: 100%;
+}
+
+.content-wrapper {
+    padding-left: 141.5px;
+    padding-right: 141.5px;
+    background-color: rgb(21, 24, 29); /* 여백 부분의 배경색 설정 */
+}
+
+.charInfo {
+    width: 33%;
+    height: 233px;
+    /* background-size: cover; */
+    padding: .5rem 0 0;
+}
+
+.char-layout {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: .5rem !important;
+}
+
+.main-wrap {
+    border: 1px solid rgba(126, 126, 126, .2);
+    background-color: #000000;
+    padding: .5rem;
+    border-radius: .25rem;
+    margin-left: .5rem;
+    flex: 1;
+}
+
+.char-tab {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.char-tab li:first-child button {
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.char-tab li:last-child button {
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.char-tab li button {
+    display: inline-block;
+    margin: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    text-decoration: none;
+    outline: 0;
+    vertical-align: middle;
+    border: 0 none;
+    color: #ffffff;
+    padding: .25rem .5rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 0;   
+}
+
+.tap-content {
+    padding: .25rem .25rem 0 0;
+    font-size: 14px;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    margin-top: .5rem;
+    border-radius: 0.375rem !important;
+    background: #131415;
+    padding: .5rem !important;
+}
+
+.tab-content > .tab-pane {
+    display: none;
+}
+
+.tab-content > .active {
+    display: block;
+}
+
+.fade {
+    transition: opacity 0.15s linear;
+}
+
+.equip {
+    background: 000000;
+    border-radius: 0.375rem !important;
+    padding: .5rem !important;
+    flex-wrap: wrap !important;
+    display: flex !important;
+}
+
+.char-equip2 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+.col-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+
+.img-thumbnail {
+    padding: .25rem;
+    background-color: #fff;
+    border: 1px solid var(--bs-border-color);
+    border-radius: .375rem;
+    max-width: 100%;
+    height: auto;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around; /* 아이템 간의 간격을 일정하게 설정 */
+    flex-wrap: wrap; /* 필요 시 다음 줄로 넘기기 */
+}
+.card-container figure {
+    margin: 0.2em; /* 각 figure 요소에 패딩 적용 */
+}
+
+.grade0{background:linear-gradient(135deg,#232323,#575757)}.grade1{background:linear-gradient(135deg,#18220b,#304911)}.grade2{background:linear-gradient(135deg,#111f2c,#113d5d)}.grade3{background:linear-gradient(135deg,#261331,#480d5d)}.grade4{background:linear-gradient(135deg,#362003,#9e5f04)}.grade5{background:linear-gradient(135deg,#341a09,#a24006)}.grade6{background:linear-gradient(135deg,#3d3325,#dcc999)}.grade7{background:linear-gradient(135deg,#0c2e2c,#2faba8)}.grade8{background:linear-gradient(135deg,#3d173e,#a00c80)}
